@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    font-family: 'Arapey', serif;
+}
+
+body {
+    background-image: url("../public/bag.jpg");
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+.main-container {
+    margin-top: 70px;
+    width: 600px;
+    height: 400px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px #4B6075;
+
+}
+
+.text-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 10px; */
+    row-gap: 20px;
+}
+
+.text-content h2 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-style: italic;
+}
+.text-content input{
+    width: 60%;
+    border: none;
+    outline: none;
+    padding: 7px 10px;
+    border-radius: 20px;
+    font-family: 'Arapey', serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #928d9c;
+    letter-spacing: 1px;
+}
+
+.text-content input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.cards{
+    display: flex;
+    /* margin-top: 30px; */
+    column-gap: 20px;
+}
+.card{
+    background-color:rgba(143, 138, 138, 0.6);
+    width: 120px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(157, 157, 236);
+    box-shadow: 2px 2px 5px #4B6075;
+    text-align: center;
+}
+.card p:first-child{
+    font-size: 18px;
+}
+
+.card img{
+    width: 60px;
+    height: 60px;
+}
